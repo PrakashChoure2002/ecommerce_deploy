@@ -10,6 +10,7 @@ import Bottom from './Bottom'
 const Home = () => {
   return (
     <div className="relative">
+      <h1>hello world</h1>
       <Background/>
       <div className="relative z-5">
       <Carsole />

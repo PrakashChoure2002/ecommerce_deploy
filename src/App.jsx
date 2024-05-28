@@ -59,7 +59,7 @@ const App = () => {
   return (
     <div className='w-full h-screen'>
        <Provider store={store}> 
-      <Router>
+      <Router basename="/ecommerce_deploy/">
       <Header/>
         <Routes>
           <Route path='/' element={<Home/>}/>
