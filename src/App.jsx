@@ -2,7 +2,7 @@ import React,{useState, useEffect } from 'react'
 import axios from 'axios';
 import Footer from './components/Footer'
 import Header from './components/Header'
-import { BrowserRouter as Router,Routes,Route } from 'react-router-dom'
+import { HashRouter as Router,Routes,Route } from 'react-router-dom'
 import Home from './components/Home/Home'
 import About from './components/pages/About'
 import Product from './components/product/Product'
@@ -59,7 +59,7 @@ const App = () => {
   return (
     <div className='w-full h-screen'>
        <Provider store={store}> 
-      <Router basename="/ecommerce_deploy/">
+      <Router >
       <Header/>
         <Routes>
           <Route path='/' element={<Home/>}/>
