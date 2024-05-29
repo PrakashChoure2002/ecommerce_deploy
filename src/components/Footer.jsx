@@ -4,12 +4,14 @@ import { FaPinterest } from "react-icons/fa";
 import { TiSocialTwitter } from "react-icons/ti";
 import { AiOutlineInstagram } from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
+import { FaGithub } from "react-icons/fa"
 import { MdKeyboardDoubleArrowUp } from "react-icons/md";
 import { IoLocationOutline } from "react-icons/io5";
 import { IoCall } from "react-icons/io5";
 import { MdOutlineEmail } from "react-icons/md";
 import { LiaFaxSolid } from "react-icons/lia";
 import vitotaLogo from "../assets/image/vitotoa__logo.png";
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
   const [currentYear, setCurrentYear] = useState('');
@@ -25,47 +27,60 @@ const Footer = () => {
           <img className='ml-[25%] md:ml-12'  alt=""  />
           <p className='leading-9 mt-6 text-sm text-capitalize text-center flex flex-col text-white '>It is a long established fact that a <br /> reader will be distracted by the <br /> readable content.Lorem Ipsum is <br /> simply dummy text of been the <br /> industry's standard ...</p>
           <div className="flex justify-center items-center md:ml-0 gap-3 md:gap-4 mt-6 ">
-            <div className="p-2 bg-white rounded-full"><TiSocialFacebook /></div>
-            <div className="p-2 bg-white rounded-full"><FaPinterest /></div>
-            <div className="p-2 bg-white rounded-full"><TiSocialTwitter /></div>
-            <div className="p-2 bg-white rounded-full"><AiOutlineInstagram /></div>
-            <div className="p-2 bg-white rounded-full"><FaLinkedinIn /></div>
+          
+            <div className="p-2 bg-white rounded-full">
+              <a href="www.linkedin.com/in/prakash-choure-3087b71b2" target="_blank" rel="noopener noreferrer">
+      <TiSocialFacebook className="text-blue-600 text-3xl" />
+    </a>
+            
+            
+            </div>
+          
+            <div className="p-2 bg-white rounded-full">  <a href="https://github.com/PrakashChoure2002" target="_blank" rel="noopener noreferrer">
+      <FaGithub className="text-blue-600 text-3xl" /></a></div>
+            <div className="p-2 bg-white rounded-full"> <a href="https://github.com/PrakashChoure2002" target="_blank" rel="noopener noreferrer">
+      <TiSocialTwitter className="text-blue-600 text-3xl" /></a></div>
+            <div className="p-2 bg-white rounded-full"> <a href="https://www.instagram.com/prakashchoure_12/" target="_blank" rel="noopener noreferrer">
+      <AiOutlineInstagram className="text-blue-600 text-3xl" /></a></div>
+            <div className="p-2 bg-white rounded-full">    <a href="www.linkedin.com/in/prakash-choure-3087b71b2" target="_blank" rel="noopener noreferrer">
+      <FaLinkedinIn className="text-blue-600 text-3xl" />
+    </a></div>
           </div>
         </div>
         <div className="text-capitalize flex flex-col text-white text-center py-6 w-full md:w-[15%] h-[100%]">
           <h1 className="my-3 block font-bold text-lg">MAIN MENU</h1>
-          <a href="" className="my-3 block">Home</a>
-          <a href="" className="my-3 block">Search</a>
-          <a href="" className="my-3 block">Privicy Policy</a>
-          <a href="" className="my-3 block">Shipping Info</a>
-          <a href="" className="my-3 block">Latest News</a>
-          <a href="" className="my-3 block">Catalog</a>
+          <a href="https://github.com/PrakashChoure2002" className="my-3 block">Home</a>
+          <a href="www.linkedin.com/in/prakash-choure-3087b71b2" className="my-3 block">Search</a>
+          <a href="https://github.com/PrakashChoure2002" className="my-3 block">Privicy Policy</a>
+          <a href="www.linkedin.com/in/prakash-choure-3087b71b2" className="my-3 block">Shipping Info</a>
+          <a href="www.linkedin.com/in/prakash-choure-3087b71b2" className="my-3 block">Latest News</a>
+          <a href="https://github.com/PrakashChoure2002" className="my-3 block">Catalog</a>
         </div>
         <div className="text-capitalize flex flex-col text-white text-center py-6 w-full md:w-[15%] h-[100%]">
           <h1 className="my-3 block font-bold text-lg">QUICK VIEW</h1>
-          <a href="" className="my-3 block">Best Product</a>
-          <a href="" className="my-3 block">Cosmetics</a>
-          <a href="" className="my-3 block">Beauty World</a>
-          <a href="" className="my-3 block">Offer Collection</a>
-          <a href="" className="my-3 block">Mega Collection</a>
-          <a href="" className="my-3 block">Training Collection</a>
+          <a href="www.linkedin.com/in/prakash-choure-3087b71b2" className="my-3 block">Best Product</a>
+          <a href="https://github.com/PrakashChoure2002" className="my-3 block">Cosmetics</a>
+          <a href="www.linkedin.com/in/prakash-choure-3087b71b2" className="my-3 block">Beauty World</a>
+          <a href="https://github.com/PrakashChoure2002" className="my-3 block">Offer Collection</a>
+          <a href="www.linkedin.com/in/prakash-choure-3087b71b2" className="my-3 block">Mega Collection</a>
+          <a href="https://github.com/PrakashChoure2002" className="my-3 block">Training Collection</a>
         </div>
         <div className="text-capitalize flex flex-col text-white text-center py-6 w-full md:w-[15%] h-[100%]">
           <h1 className="my-3 block font-bold text-lg">LINKS</h1>
-          <a href="" className="my-3 block">About Us</a>
-          <a href="" className="my-3 block">Contact Us</a>
-          <a href="" className="my-3 block">Faq</a>
-          <a href="" className="my-3 block">Portfolio</a>
-          <a href="" className="my-3 block">Search</a>
-          <a href="" className="my-3 block">Wishlist</a>
-          <a href="" className="my-3 block">Lookbook</a>
+          <a href="https://github.com/PrakashChoure2002" className="my-3 block">About Us</a>
+          <a href="www.linkedin.com/in/prakash-choure-3087b71b2" className="my-3 block">Contact Us</a>
+          <a href="https://github.com/PrakashChoure2002" className="my-3 block">Faq</a>
+          <a href="www.linkedin.com/in/prakash-choure-3087b71b2" className="my-3 block">Portfolio</a>
+          <a href="www.linkedin.com/in/prakash-choure-3087b71b2" className="my-3 block">Search</a>
+          <a href="www.linkedin.com/in/prakash-choure-3087b71b2" className="my-3 block">Wishlist</a>
+          <a href="https://github.com/PrakashChoure2002" className="my-3 block">Lookbook</a>
         </div> 
         <div className="text-capitalize flex flex-col text-white text-center py-6 w-full md:w-[15%] h-[100%]">
           <h1 className='font-bold text-lg'>STORE INFO</h1>
-          <a href="" className="my-3 block"><IoLocationOutline className='inline-block' />   Vitota Beauty Store  <br /> Bhopal India</a>
-          <a href="" className="my-3 block"><IoCall className='inline-block' /> Call Us: +918319384910</a>
-          <a href="" className="my-3 block"><MdOutlineEmail className='inline-block' /> Email Us: <br /> support@vitota.in</a>
-          <a href="" className="my-3 block"><LiaFaxSolid className='inline-block' /> Fax: 7582908615</a>
+          <a href="www.linkedin.com/in/prakash-choure-3087b71b2" className="my-3 block"><IoLocationOutline className='inline-block' />   Random Addres  <br />  India</a>
+          <a href="https://github.com/PrakashChoure2002" className="my-3 block"><IoCall className='inline-block' /> Call Us: +91-9826896140</a>
+          <a href="https://github.com/PrakashChoure2002" className="my-3 block"><MdOutlineEmail className='inline-block' /> Email Us: <br /> prakashchoure2002@gmail.com</a>
+          <a href="www.linkedin.com/in/prakash-choure-3087b71b2" className="my-3 block"><LiaFaxSolid className='inline-block' /> Fax:9826896140 </a>
         </div>
         <div className="absolute right-6 bottom-10 p-4 bg-red-400 rounded-full border-4 border-white"><a href=""><MdKeyboardDoubleArrowUp /></a></div>
       </div>
